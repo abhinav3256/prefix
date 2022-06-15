@@ -7,11 +7,11 @@ import (
 
 func main() {
 
-	var input = []string{"pay", "attention", "practice", "attend"}
+	var input = []string{"hello", "he", "helbounds", "heaven"}
 	var check int
 
 	//var pre = "pre"
-	prefArr := strings.Split("at", "")
+	prefArr := strings.Split("hel", "")
 	//fmt.Println(prefArr)
 	var count int
 	for i := 0; i < len(input); i++ {
@@ -19,9 +19,12 @@ func main() {
 		//fmt.Println(inputArr)
 		check = 0
 		for j := 0; j < len(prefArr); j++ {
-			if inputArr[j] == prefArr[j] {
+			if j < len(inputArr) {
 
-				check = check + 1
+				if inputArr[j] == prefArr[j] {
+
+					check = check + 1
+				}
 			}
 		}
 
